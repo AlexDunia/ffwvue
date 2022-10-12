@@ -1,0 +1,103 @@
+[
+   {
+      "id": 1,
+      "Img": [
+         "banana.png"
+      ],
+      "Name": "Tigernut and Beetroot",
+      "Description": "Beetroot, Watermelon, Pineapple and Apple. ",
+      "Price": "N1,000"
+   },
+   {
+      "id": 2,
+      "Img": "banana2.png",
+      "Name": "Fluxxy fritties ginger",
+      "Description": "Tigernut, Ginger",
+      "Price": "N1,000"
+   },
+   {
+      "id": 3,
+      "Name": "Tigernut and Carrot juice",
+      "Description": "Tigernut, Ginger",
+      "Price": "N1,000"
+   },
+   {
+      "id": 5,
+      "Name": "Tiger nut and Coconut",
+      "Description": "Tigernut, Coconut ",
+      "Price": "N1,000"
+   },
+   {
+      "id": 6,
+      "Name": "Tigernut and Zobo",
+      "Description": "Tigernut, Coconut ",
+      "Price": "N1,000"
+   },
+   {
+      "id": 7,
+      "Name": "Orange, Pineapple and Ginger",
+      "Price": "N1,000"
+   },
+   {
+      "id": 8,
+      "Name": "Tigernut and Banana",
+      "Price": "N1,000"
+   }
+]
+
+ products: [
+   {
+        Img: require('./assets/Images/beetroot2.png'),
+        Name: "Tigernut and Beetroot",
+        Description: "Beetroot, Watermelon, Pineapple and Apple. ",
+        Price: "N1,000",
+   },
+   {
+        Img: require('./assets/Images/ginger2.png'),
+        Name: "Fluxxy fritties ginger", 
+        Description: "Tigernut, Ginger",
+        Price: "N1,000"
+   },
+   {
+        Img: require('./assets/Images/carrot2.png'),
+        Name: "Tigernut and Carrot juice", 
+        Description: "Tigernut, Ginger, Carrot",
+        Price: "N1,000"
+   },
+   {  
+        Img: require('./assets/Images/coconut2.png'),
+        Name: "Tiger nut and Coconut", 
+        Description: "Tigernut, Coconut ",
+      Price: "N1,000"
+   },
+   { 
+      Img: require('./assets/Images/zobo2.png'),
+      Name: "Tigernut and Zobo", 
+      Description: "Tigernut, Coconut ",
+      Price: "N1,000"
+   },
+   { 
+      Img: require('./assets/Images/immunity2.png'),
+      Name: "Tigernut and Orange juice", 
+      Description: "Orange, Pineapple and Ginger", 
+      Price: "N1,000"
+   },
+   {
+      Img: require('./assets/Images/banana2.png'),
+      Name: "Tigernut and Banana", 
+      Price: "N1,000"
+   }
+],
+ mounted() {
+    axios
+      .get(`http: //localhost/Phplessons`)
+      .then((response) => {
+      // JSON responses are automatically parsed.
+        this.users = response.data
+        console.log(response.data)
+   })
+      .catch((e) => {
+        this.errors.push(e)
+   })
+},
+import axios from 'axios'

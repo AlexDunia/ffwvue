@@ -1,0 +1,427 @@
+.cartcontainer {
+   width: 85%;
+   margin: auto;
+}
+
+.cflex {
+   display: flex;
+   justify-content: space-between;
+   align-items: left;
+   text-align: left;
+   padding-top: 10px;
+   padding-bottom: 60px;
+   /* padding: 10px; */
+}
+
+/* .pimgc{
+   flex-basis:20%;
+} */
+
+.pimgc {
+   flex-basis: 10%;
+   padding: 5px;
+}
+
+.pimgc img {
+   width: 120px;
+}
+
+
+.cflex h4 {
+   font-family: 'Montserrat',
+      sans-serif;
+   font-weight: 600;
+   font-size: 15px;
+   line-height: 1.3rem;
+}
+
+.dc h4 {
+   font-weight: 550;
+   font-size: 17px;
+}
+
+.dc h3 {
+   font-weight: 400;
+   font-size: 17px;
+   font-family: 'Montserrat',
+      sans-serif;
+}
+
+.dcdescription h4 {
+   font-weight: 400;
+   margin-top: -13px;
+}
+
+.pimgc h4 img {
+   width: 100px;
+   /* height: 100px; */
+
+   /* width: 100px; */
+   /* width: 200px;
+height: 250px;
+padding: 10px;
+border-radius: 20px 50px;
+background-color: #CAC743;
+margin-left: -17px; */
+}
+
+/* 
+.bg5 {
+   width: 200px;
+   height: 250px;
+   padding: 10px;
+   border-radius: 20px 50px;
+   background-color: #CAC743;
+   margin-left: -17px;
+}
+
+.bg5 img {
+   width: 200px;
+}
+
+.bg6 {
+   width: 200px;
+   height: 250px;
+   padding: 10px;
+   border-radius: 20px 50px;
+   background-color: #F94DB4;
+   margin-left: -17px;
+} */
+
+/* .dc >* {
+   flex: 0 0 auto;
+} */
+
+.dc {
+   flex-basis: 30%;
+}
+
+.pc {
+   flex-basis: 15%;
+}
+
+.dec {
+   flex-basis: 10%;
+}
+
+.dec button {
+   margin-top: 15px;
+}
+
+
+/* td {
+   padding: 10px 30px;
+   color: black;
+   align-items: left;
+   margin: auto;
+   white-space: nowrap;
+} */
+
+table {
+   border-collapse: collapse;
+   width: 65em;
+   font-size: 17px;
+   color: black;
+   font-weight: 700;
+   font-family: 'Montserrat',
+      sans-serif;
+   font-weight: 400;
+}
+
+th {
+   text-align: left;
+}
+
+td {
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+
+tr {
+   margin-top: 100px;
+   margin-bottom: 120px;
+}
+
+th {
+   border-bottom: 0.1px solid black;
+   padding-bottom: 50px;
+}
+
+/* td {
+   padding: 10px 30px;
+   color: black;
+   align-items:left;
+   margin:auto;
+   white-space: nowrap;
+} */
+
+/* .tickethead {
+   background: #C04888;
+   padding: 5000px;
+} */
+
+/* table tr td:nth-child(1){
+   width:1000px;
+} */
+
+/* table{
+   border-collapse:collapse;
+   border-spacing: 50px 150px;
+} */
+
+/* tr{
+   padding-right:200px;
+} */
+
+/* .description{
+   padding-right:50px;
+} */
+
+/* .descriptionw { */
+/* inline-size: min-content; */
+/* width:1000px;
+   padding-right:150px; */
+/* white-space:normal;
+} */
+
+/* th {
+   border-collapse:collapse;
+   /* padding: 10px 70px; */
+/* padding:70px; */
+/* padding-left:0px; */
+/* padding-right:230px; */
+/* white-space: nowrap; */
+/* padding-top: 15px;
+   padding-bottom: 10px; */
+/* color: black; */
+/* margin:200px; */
+/* align-items:left;
+   margin:auto;
+   text-align: left;
+   border-bottom: 0.2px solid black; */
+/* padding: 13px;
+   align-items:left; */
+/* } */
+
+.tryfixbottom {
+   position: relative;
+}
+
+
+.rectangle {
+   z-index: 2;
+   width: 100%;
+   height: 100px;
+   background-color: green;
+   position: absolute;
+   bottom: 0px;
+   position: fixed;
+}
+
+.rectangle h1 {
+   color: white;
+}
+
+@media screen and (max-width: 600px) {
+
+
+   table {
+      border: 0;
+   }
+
+   table caption {
+      font-size: 1.3em;
+   }
+
+   table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+   }
+
+   table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+   }
+
+   table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+   }
+
+   table td::before {
+      /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+   }
+
+   table td:last-child {
+      border-bottom: 0;
+   }
+}
+
+.productcategoriesss button {
+   color: black;
+   margin-top: 20px;
+   margin-bottom: 60px;
+   border: 0.4px solid black;
+   padding-top: 8px;
+   padding-bottom: 11px;
+   padding-left: 30px;
+   padding-right: 30px;
+   background-color: #FEFFD9;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 100px;
+}
+
+.productcategoriess button {
+   color: black;
+   margin-top: 20px;
+   margin-bottom: 60px;
+   border: 0.4px solid black;
+   padding-top: 8px;
+   padding-bottom: 11px;
+   padding-left: 30px;
+   margin-right: 40px;
+   padding-right: 30px;
+   background-color: #FEFFD9;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 100px;
+}
+
+.pcdiv {
+   display: flex;
+   justify-content: end;
+   margin-bottom: 50px;
+}
+
+.gt {
+   margin: auto;
+   text-align: center;
+}
+
+.gt h2 {
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 450;
+   line-height: 4rem;
+}
+
+.gtflex {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 50px;
+}
+
+.gttext h3 {
+   font-family: 'Montserrat',
+      sans-serif;
+   font-weight: 400;
+   margin-top: 20px;
+   font-size: 17px;
+}
+
+.checkout button {
+   background: #737172;
+   color: white;
+   border: 0;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   margin: auto;
+   text-align: center;
+   width: 100%;
+   font-size: 19px;
+   font-weight: 500;
+   margin-top: 110px;
+}
+
+@media (max-width: 770px) {
+   .pimgc h4 img {
+      width: 65px;
+   }
+
+   .pc {
+      flex-basis: 15%;
+   }
+
+   /* .pcc {
+      flex-basis: 6%;
+   } */
+
+   .pcc {
+      padding-left: 15px;
+      /* padding-right:20px; */
+      /* flex-basis: 6%; */
+   }
+
+   .dc {
+      /* padding-left: 5px; */
+      flex-basis: 40%;
+   }
+
+   .dc h4 {
+      font-weight: 550;
+      font-size: 13px;
+   }
+
+   .dc h3 {
+      font-weight: 450;
+      font-size: 11px;
+      font-family: 'Montserrat', sans-serif;
+      margin-top: -10px;
+   }
+
+   .cflex h4 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 1.2rem;
+   }
+
+   .cflex h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 450;
+      font-size: 11px;
+      padding-top: 4.4px;
+      /* padding-left:5px; */
+      line-height: 1.2rem;
+   }
+
+   .secondspace {
+      display: none;
+   }
+
+   .fourthflexp br {
+      display: none;
+   }
+
+   .desk {
+      padding-top: 2px;
+   }
+
+   /* .desk1 {
+   padding-top: -20px;
+} */
+
+   .pimgc {
+      flex-basis: 20%;
+      padding: 0px;
+   }
+
+
+   .dec {
+      flex-basis: 0%;
+   }
+}
